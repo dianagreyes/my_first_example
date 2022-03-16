@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PrimerEj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FORMAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9v-6J-nOM">
+                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmO-Mc-IIc">
+                                <rect key="frame" x="148.5" y="115" width="117" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="RECTANGULO"/>
+                                <connections>
+                                    <segue destination="LaO-qq-KXM" kind="presentation" id="TT5-dd-Xid"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9s-s7-pch">
+                                <rect key="frame" x="155" y="166" width="104" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TRIANGULO"/>
+                                <connections>
+                                    <segue destination="Gvh-nk-veS" kind="presentation" id="AaD-YM-qzf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvx-dZ-oeH">
+                                <rect key="frame" x="155.5" y="217" width="103" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CUADRADO"/>
+                                <connections>
+                                    <segue destination="Tg9-9P-acs" kind="presentation" id="2pe-cA-J7s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F9v-6J-nOM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="BeA-vM-Ym4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F9v-6J-nOM" secondAttribute="trailing" constant="20" id="OH9-AJ-wOd"/>
+                            <constraint firstItem="xmO-Mc-IIc" firstAttribute="top" secondItem="F9v-6J-nOM" secondAttribute="bottom" constant="30" id="OgK-cM-wUr"/>
+                            <constraint firstItem="R9s-s7-pch" firstAttribute="top" secondItem="xmO-Mc-IIc" secondAttribute="bottom" constant="20" id="P9u-w2-D0K"/>
+                            <constraint firstItem="F9v-6J-nOM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UOH-OY-6zl"/>
+                            <constraint firstItem="Dvx-dZ-oeH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f4R-Ej-20T"/>
+                            <constraint firstItem="xmO-Mc-IIc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pcE-1H-362"/>
+                            <constraint firstItem="Dvx-dZ-oeH" firstAttribute="top" secondItem="R9s-s7-pch" secondAttribute="bottom" constant="20" id="vWK-MV-Lag"/>
+                            <constraint firstItem="R9s-s7-pch" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vr0-aG-jKk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="51.5625"/>
+        </scene>
+        <!--Rectangulo View Controller-->
+        <scene sceneID="Jtu-K3-PPH">
+            <objects>
+                <viewController id="LaO-qq-KXM" customClass="RectanguloViewController" customModule="PrimerEj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKj-wd-ANC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECTANGULO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9v-f6-RRs">
+                                <rect key="frame" x="152" y="64" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="taX-sa-TwC">
+                                <rect key="frame" x="20" y="105" width="374" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Escribe la base">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6sj-Mv-8az">
+                                <rect key="frame" x="20" y="159" width="374" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Escribe la altura">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQa-nN-BXG">
+                                <rect key="frame" x="152.5" y="213" width="109" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calcular area"/>
+                                <connections>
+                                    <action selector="calcularAreaRectangulo:" destination="LaO-qq-KXM" eventType="touchUpInside" id="0fw-va-ilL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area del rectangulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofi-Q7-RRF">
+                                <rect key="frame" x="132.5" y="264" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sfp-an-2bt"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="ZQa-nN-BXG" firstAttribute="centerX" secondItem="sfp-an-2bt" secondAttribute="centerX" id="3Ft-ub-luF"/>
+                            <constraint firstItem="ZQa-nN-BXG" firstAttribute="top" secondItem="6sj-Mv-8az" secondAttribute="bottom" constant="20" id="8yq-Ka-Wf1"/>
+                            <constraint firstItem="taX-sa-TwC" firstAttribute="leading" secondItem="sfp-an-2bt" secondAttribute="leading" constant="20" id="JIJ-FK-Zs4"/>
+                            <constraint firstItem="K9v-f6-RRs" firstAttribute="top" secondItem="sfp-an-2bt" secondAttribute="top" constant="64" id="ORq-Ys-8We"/>
+                            <constraint firstItem="sfp-an-2bt" firstAttribute="trailing" secondItem="6sj-Mv-8az" secondAttribute="trailing" constant="20" id="Q5m-3A-Vry"/>
+                            <constraint firstItem="ofi-Q7-RRF" firstAttribute="centerX" secondItem="sfp-an-2bt" secondAttribute="centerX" id="SFm-58-OcG"/>
+                            <constraint firstItem="6sj-Mv-8az" firstAttribute="leading" secondItem="sfp-an-2bt" secondAttribute="leading" constant="20" id="d2d-ph-nBK"/>
+                            <constraint firstItem="sfp-an-2bt" firstAttribute="trailing" secondItem="taX-sa-TwC" secondAttribute="trailing" constant="20" id="dav-3b-pIP"/>
+                            <constraint firstItem="taX-sa-TwC" firstAttribute="top" secondItem="K9v-f6-RRs" secondAttribute="bottom" constant="20" id="eQg-rP-39K"/>
+                            <constraint firstItem="6sj-Mv-8az" firstAttribute="top" secondItem="taX-sa-TwC" secondAttribute="bottom" constant="20" id="gtw-1c-xXU"/>
+                            <constraint firstItem="K9v-f6-RRs" firstAttribute="centerX" secondItem="sfp-an-2bt" secondAttribute="centerX" id="qTa-MV-dp4"/>
+                            <constraint firstItem="ofi-Q7-RRF" firstAttribute="top" secondItem="ZQa-nN-BXG" secondAttribute="bottom" constant="20" id="tzL-8a-sBy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alturaRectangulo" destination="6sj-Mv-8az" id="8dz-2R-SvF"/>
+                        <outlet property="areaRectangulo" destination="ofi-Q7-RRF" id="dUe-6Q-1aX"/>
+                        <outlet property="baseRectangulo" destination="taX-sa-TwC" id="q7S-XO-C82"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Dx-Av-a75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="102"/>
+        </scene>
+        <!--Cuadrado View Controller-->
+        <scene sceneID="Xoe-E2-Qyl">
+            <objects>
+                <viewController id="Tg9-9P-acs" customClass="CuadradoViewController" customModule="PrimerEj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sme-E4-KR4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUADRADO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGT-Yq-mXO">
+                                <rect key="frame" x="160.5" y="20" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zh-Gr-l29">
+                                <rect key="frame" x="20" y="61" width="374" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Escribe la altura">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozc-pI-Bkj">
+                                <rect key="frame" x="152.5" y="115" width="109" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calcular area"/>
+                                <connections>
+                                    <action selector="CalcularAreaTriangulo:" destination="Gvh-nk-veS" eventType="touchUpInside" id="Yth-c4-tWe"/>
+                                    <action selector="calcularAreaCuadrado:" destination="Tg9-9P-acs" eventType="touchUpInside" id="WOR-JP-Fk9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area del cuadrado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1me-U3-slE">
+                                <rect key="frame" x="137" y="166" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b85-NS-Ihb"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="RGT-Yq-mXO" firstAttribute="top" secondItem="b85-NS-Ihb" secondAttribute="top" constant="20" id="0XN-Tr-uAo"/>
+                            <constraint firstItem="7Zh-Gr-l29" firstAttribute="top" secondItem="RGT-Yq-mXO" secondAttribute="bottom" constant="20" id="1OD-DD-JLY"/>
+                            <constraint firstItem="b85-NS-Ihb" firstAttribute="trailing" secondItem="7Zh-Gr-l29" secondAttribute="trailing" constant="20" id="1yW-GJ-vbA"/>
+                            <constraint firstItem="ozc-pI-Bkj" firstAttribute="centerX" secondItem="b85-NS-Ihb" secondAttribute="centerX" id="7XR-XS-yEO"/>
+                            <constraint firstItem="7Zh-Gr-l29" firstAttribute="leading" secondItem="b85-NS-Ihb" secondAttribute="leading" constant="20" id="Ids-f6-lBV"/>
+                            <constraint firstItem="1me-U3-slE" firstAttribute="top" secondItem="ozc-pI-Bkj" secondAttribute="bottom" constant="20" id="bnk-ei-hvJ"/>
+                            <constraint firstItem="1me-U3-slE" firstAttribute="centerX" secondItem="b85-NS-Ihb" secondAttribute="centerX" id="eUA-ho-wBk"/>
+                            <constraint firstItem="RGT-Yq-mXO" firstAttribute="centerX" secondItem="b85-NS-Ihb" secondAttribute="centerX" id="oBa-xs-XKu"/>
+                            <constraint firstItem="ozc-pI-Bkj" firstAttribute="top" secondItem="7Zh-Gr-l29" secondAttribute="bottom" constant="20" id="oGl-wv-DP8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alturaCuadrado" destination="7Zh-Gr-l29" id="q2f-Gc-Okh"/>
+                        <outlet property="areaCuadrado" destination="1me-U3-slE" id="sRt-f9-DZT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LfW-2l-OL8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="856"/>
+        </scene>
+        <!--Triangulo View Controller-->
+        <scene sceneID="naa-2a-b1o">
+            <objects>
+                <viewController id="Gvh-nk-veS" customClass="TrianguloViewController" customModule="PrimerEj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZRe-ge-kfM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRIANGULO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53M-Ik-bPB">
+                                <rect key="frame" x="159.5" y="20" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IVX-UE-XhW">
+                                <rect key="frame" x="20" y="61" width="374" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Escribe la base">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d6a-Re-5xJ">
+                                <rect key="frame" x="20" y="115" width="374" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Escribe la altura">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNF-vA-BAF">
+                                <rect key="frame" x="152.5" y="169" width="109" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calcular area"/>
+                                <connections>
+                                    <action selector="CalcularAreaTriangulo:" destination="Gvh-nk-veS" eventType="touchUpInside" id="3wy-nA-P2Z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area del triangulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="958-6D-NS9">
+                                <rect key="frame" x="140" y="220" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RB2-X8-sYN"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="d6a-Re-5xJ" firstAttribute="top" secondItem="IVX-UE-XhW" secondAttribute="bottom" constant="20" id="7rs-Io-UK9"/>
+                            <constraint firstItem="IVX-UE-XhW" firstAttribute="leading" secondItem="RB2-X8-sYN" secondAttribute="leading" constant="20" id="IVE-7h-BPA"/>
+                            <constraint firstItem="IVX-UE-XhW" firstAttribute="top" secondItem="53M-Ik-bPB" secondAttribute="bottom" constant="20" id="IXJ-kf-Ig1"/>
+                            <constraint firstItem="RB2-X8-sYN" firstAttribute="trailing" secondItem="d6a-Re-5xJ" secondAttribute="trailing" constant="20" id="Ipf-Ca-1HM"/>
+                            <constraint firstItem="53M-Ik-bPB" firstAttribute="centerX" secondItem="RB2-X8-sYN" secondAttribute="centerX" id="JMt-Iq-ggf"/>
+                            <constraint firstItem="dNF-vA-BAF" firstAttribute="centerX" secondItem="RB2-X8-sYN" secondAttribute="centerX" id="Opc-5s-HgC"/>
+                            <constraint firstItem="dNF-vA-BAF" firstAttribute="top" secondItem="d6a-Re-5xJ" secondAttribute="bottom" constant="20" id="Rgi-jn-nru"/>
+                            <constraint firstItem="RB2-X8-sYN" firstAttribute="trailing" secondItem="IVX-UE-XhW" secondAttribute="trailing" constant="20" id="aBs-yX-885"/>
+                            <constraint firstItem="958-6D-NS9" firstAttribute="centerX" secondItem="RB2-X8-sYN" secondAttribute="centerX" id="iVW-t1-L0p"/>
+                            <constraint firstItem="958-6D-NS9" firstAttribute="top" secondItem="dNF-vA-BAF" secondAttribute="bottom" constant="20" id="jB6-Mn-H4z"/>
+                            <constraint firstItem="d6a-Re-5xJ" firstAttribute="leading" secondItem="RB2-X8-sYN" secondAttribute="leading" constant="20" id="o6n-t0-c0h"/>
+                            <constraint firstItem="53M-Ik-bPB" firstAttribute="top" secondItem="RB2-X8-sYN" secondAttribute="top" constant="20" id="tmF-3d-g5o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alturaTriangulo" destination="d6a-Re-5xJ" id="Gv3-8V-bca"/>
+                        <outlet property="areaTriangulo" destination="958-6D-NS9" id="IVD-bH-bWI"/>
+                        <outlet property="baseTriangulo" destination="IVX-UE-XhW" id="Joj-9F-sEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoY-9b-P6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
